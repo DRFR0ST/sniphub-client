@@ -1,0 +1,2 @@
+export const UI_DRAWER_SHOW = "UI_DRAWER_SHOW";
+export const UI_DRAWER_HIDE = "UI_DRAWER_HIDE";
