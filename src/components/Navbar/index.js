@@ -12,6 +12,9 @@ const styles = theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
+    textTransform: "uppercase",
+    background: "transparent",
+    boxShadow: "none"
   },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,
@@ -45,7 +48,7 @@ const Navbar = ({classes, open, handleDrawerOpen}) => {
       >
         <MenuIcon />
       </IconButton>
-      <Typography variant="h6" color="inherit" noWrap>
+      <Typography align="center" variant="h6" color="inherit" noWrap>
         Sniphub
       </Typography>
     </Toolbar>

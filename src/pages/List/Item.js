@@ -1,4 +1,5 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
 import { withStyles } from "@material-ui/core";
 
 const styles = {
@@ -14,12 +15,11 @@ const styles = {
 
 const Item = ({title, description, code, created_at, classes}) => {
 
-
     return <div className={classes.root}>
         <h3>{title}</h3>
         <p>{description}</p>
         <br/>
-        <pre><code>{code}</code></pre>
+        <ReactMarkdown source={ "```\n" + code + "\n```" } rawSourcePos />
     </div>
 }
 
